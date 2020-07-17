@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SU Arab music</title>
+   <script>
+
+     let counter=0;
+    
+    function addone(){
+      counter++
+      document.getElementById("counter").innerHTML=counter;
+    }
+   </script>
+    <style>
+         @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+/* html{
+    width: 100%;
+    } */
+
+body{
+    background-image: url( https://images3.alphacoders.com/735/735793.png);
+    background-repeat: none;
+   background-size: cover;
+   background-attachment: fixed;
+   /* margin: 5% auto 0 auto; */
+  /* width: 90%;
+  max-width: 1125px; */
+}
+
+/* navbar */
+.topnav {
+  background-color:#c28b92;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Droid Arabic Kufi', serif;
+  margin: auto;
+}
+
+
+.topnav a:hover {
+  background-color:#a0696b	;
+}
+
+
+.topnav a.active {
+  background-color:#bfadca ;
+  font-family: 'Droid Arabic Kufi', serif;
+  color: white;
+}
+.title{
+            font-family: 'Droid Arabic Kufi', serif;
+    text-align: center;
+    color:white ;
+    text-shadow: black 2px 2px;
+    font-size: 40px;
+        }
+        .p{
+            text-align: center;
+            font-family: 'Droid Arabic Kufi', serif;
+            font-size: 18px;
+            color:black ;
+            text-shadow: white 1px 1px;
+        }
+       
+
+input,
+span,
+label,
+textarea {
+  font-family:'Droid Arabic Kufi', serif; 
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 13px;
+  color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; 
+}
+
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  /* color: #8F8F8F; */
+  color: white;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+  background: #bfadca;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #a0696b;
+  color: black;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+.foorm{
+    display: flex;
+    justify-content: center;
+}
+.songstitle{
+  text-align: right;
+  font-family: 'Droid Arabic Kufi', serif;
+    
+    color:white ;
+    text-shadow: black 2px 2px;
+}
+.video{
+  display: flex;
+  justify-content: center;
+}
+.songsdes{
+  text-align: right;
+  font-family: 'Droid Arabic Kufi', serif;
+    
+    color:white ;
+    text-shadow: black 2px 2px;
+}
+.pp{
+  font-family: 'Droid Arabic Kufi', serif;
+    text-align: center;
+    color:white ;
+    text-shadow: black 2px 2px;
+    font-size: 17px;
+}
+.counter{
+  
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Droid Arabic Kufi', serif;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <div style="font-family:'Droid Arabic Naskh', serif;" >
+        <a class="active" href="mainpage.html">الرئيسية</a>
+        <a href="episodes.html"> الحلقات</a>
+        <a href="music.html">موسيقى</a>
+        <a href="movie.html">الفيلم</a>
+        <a href="museum.html">متحف</a>
+        <a href="tests.html">إختبارات</a>
+        <a href="shop.html">المتجر</a>
+        <a href="books.html">كتب</a>
+        <a href="other.html">تواصل</a>
+        </div>
+      </div>
+      <!-- logo -->
+    <img src="C:\Users\Acer\Pictures\logo6.png"height="101"width="405">
+    <h2 class="title">
+       ! موسيقى يونيفرس 
+    </h1>
+    <p class="p">
+        تعد الموسيقى جزء كبير ومهم من ستيفن يونيفرس عبر كل مواسمه ,فكل شخصيه تعبر عن مشاكلها او فرحها او اصعب لحظاتها او اسعد لحظاتها بالغناء!ومشاهدين السلسله الشهيره يعرفون مدى تأثير واهميه الموسيقى التي يطرحها البرنامج.
+        فكل اغنيه تحمل معاني لا يستطيع الكلام التعبير عنها . فتحكي عن اهميه التواصل وطلب المساعده, وجود الاصدقاء والعائله, كونك سعيد وكونك نائه .
+        ساعدت هذي الموسيقى العديد من الاطفال والكبار حول العالم وجميعهم شاركوا قصصهم لمؤلفي البرنامج مثل ربيكا شوغر ولممثلي اصوات الشخصيات او المغنيين مثل زاك كاليسون و ديدي ماغنوهول .
+        اما الاخرين فاكتفوا بمشاركه قصصهم اونلاين ليشاركو تجاربهم وتصادف بعض الاحيان ان يجدها احد العاملين على البرنامج وشكرهم على ذلك.
+    </p>
+   <p class="p">
+       اذا كنت من متابعي البرنامج , وفي يوم ما بشكل وطريقه ما تأثرت بموسيقى او محتوى البرنامج وغيرك الى الأفضل .... شاركنا بترجبتك! سنكون اكثر من سعيدين بسماع قصصكم وكيف اثرت سلسله تلفزيونيه على حياه اناس من حول العالم .
+       لا تعلم ربما حتى ترى ربيكا شوقر هذه القصص المختلفه او حتى طاقم العمل الاخرون مثل الم}ؤلف ايان او حتى احد ممثلي صوت الشخصيات مثل ايستيل ممثله صوت وغناء شخصيه غارنت المحبوبه. 
+       <br>
+      : اكتب هنا تجربتك الفريده مع اسمك
+   </p>
+    <div class="foorm">
+<form>
+  <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+  <label for="nme"><span>ما هو اسمك؟</span></label>
+  <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+  <label for="msg"><span>ما هي تجربتك؟</span></label>
+  <input type="submit" value="Submit!" />
+</form>
+</div>
+<h1>
+          <br>   
+</h1>
+<h1 class="title">
+      اغاني ستيفن يونيفرس حسبت ترتيب ظهورها
+    <br>
+    بالمواسم:
+</h1>
+<h1 class="songstitle">
+  امرأه عملاقه:
+</h1>
+<p class="songsdes">
+  الاغنيه في الموسم الاول , الحلقه الثانيه عشر . 
+  <br>
+  يغني ستيفن هذه الاغنيه لبيرل واماثيست محاولاً جعلهما يتفقان ويتعاونان ليندمجوا ويشكلوا امرأه عملاقه ... وايضاص يعبر عن رغبته في الاندماج مثلهم في يوم ما 
+</p>
+<div class="video">
+  <video width="450" height="370" controls>
+    <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٩٢٧م0gl79.MP4">
+  Your browser does not support the video tag.
+  </video>
+  </div>
+
+<h1 class="songstitle">
+  كن كما انت:
+</h1>
+<p class="songsdes">
+  الاغنيه من الموسم الاول , الحلقه الثلاثون. 
+  <br>
+  بعدما علق ستيفن في جزيره ما مع سيدي ولارس بدون اي طريقه للهروب وصامدون على امل النجده , ستيفن يحاول تذكيرهم بروعه المكان وجمال هذه الفرصه لكونهم معاً في جزير لرائعه .
+</p>
+<div class="video">
+  <video width="450" height="370" controls>
+    <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٧٤٩م05414.MP4">
+  Your browser does not support the video tag.
+  </video>
+  </div>
+  <h1 class="songstitle">
+    إفعلها من اجلها:
+  </h1>
+  <p class="songsdes">
+    الاغنيه في الموسم الثاني , الحلقه السادسه. 
+    <br>
+    عندما طلبت كوني من بيرل ان تعلمها فنون القتال بالسيف وتكون معلمتها ومدربتها لتصبح اقوى لتستطيع القتال بجانب ستيفن وحمايته , نظراً لكون كوني بشريه وقد تخاطر بحياتها بفعلها لهذا من اجل ستيفن ... ستيفن تصبح لديه الربيه بشان هذا القرار ويقرروا ان يقاتلون معا.
+  </p>
+  <div class="video">
+    <video width="450" height="370" controls>
+      <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٨٥٢مs7321.MP4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+ <h1 class="songstitle">
+   ليوم واحد فقط دعونا نفكر فقط بالحب:
+ </h1>
+   <p class="songsdes">
+     الاغنيه في الموسم الخامس , الحلقه الثالثه والعشرون. 
+     <br>
+     بعد كل الاحداث الفظيعه الكبيره التي حدثت مؤخراً , ستيفن يحاول النظر الى الجانب الايجابي من كل شيء وتذكير الجميع بنتيجه جهدهم الرائعه ... اليوم سيكون فقط عن الحب 
+   </p>
+   <div class="video">
+    <video width="450" height="370" controls>
+      <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٦٥٨م31319.MP4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+    <h1 class="songstitle">
+      انتماء:
+    </h1>
+<p class="songsdes">
+  الاغنيه من فيلم ستيفن يونيفرس. 
+  <br>
+  في الفضاء , في حديقه بينك دايموند القديمه ... ستيفن يكتشف ماضي سبينل المحزن مع بينك دايموند وكيف تم التخلي عنها في الحديقه لتنتظر لآلاف السنين واقفه في مكانها منتظره رجوع بينك دابموند . ثم تصدم بخبر موت بينك دايموند لستيفن الذي يعيش مع بقيه اصدقائها الجدد . 
+
+</p>
+<div class="video">
+  <video width="450" height="370" controls>
+    <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٦٢٦مcg6xg.MP4">
+  Your browser does not support the video tag.
+  </video>
+  </div>
+   <h1 class="songstitle">
+     اسبابي الصغيره لماذا:
+   </h1>
+   <p class="songsdes">
+     الاغنيه في الموسم السادس , الحلقه السابعه عشر. 
+     <br>
+     عندما اصبح ستيفن يمر بوقت عصيب ويمر بتجارب لم يحظى بها من قبل , يلجأ الى الدايموندز ليساعدوه وهنا بلو دايموند تحاول اسعاد ستيفن بقدرتها الجديده. 
+   </p>
+   <div class="video">
+    <video width="450" height="370" controls>
+      <source src="C:\Users\Acer\Downloads\٠٧١٣٢٠٢٠١٣٠٧٢٩م30tkz.MP4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+    <h1 class="title">
+      !
+      اخبرنا بالاغاني التي اعجبتك
+    </h1>
+    <p class="pp">
+     اضغط على اسم الاغنيه التي اعجبتك اذا احببتها من ناحيه الانيميشن او الصوت او الكلمات او حتى ترجمه الموقع ! 
+    </p>
+<h1 class="pp">
+  عدد الاغاني التي تم الاعجاب بها :
+</h1>
+    <h1 class="counter" id="counter">
+      0
+    </h1>
+    <div class="button">
+    <button onclick="addone()">
+    امرأه عملاقه
+    </button>
+    </div>
+    <div class="button">
+    <button onclick="addone()">
+      كن كما انت
+      </button>
+      </div>
+      <div class="button">
+      <button onclick="addone()">
+      افعلها من اجلها
+      </button>
+      </div>
+      <div class="button">
+        <button onclick="addone()">
+           ليوم واحد دعونا نفكر بالحب
+         </button>
+         </div>
+         <div class="button">
+         <button onclick="addone()">
+          انتماء
+        </button>
+        </div>
+        <div class="button">
+          <button onclick="addone()">
+            اسبابي الصغيره لماذا
+          </button>
+          </div>
+</body>
+</html>

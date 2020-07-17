@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SU Arab fanart</title>
+    <script>
+         let counter=0;
+    
+    function addone(){
+      counter++
+      document.getElementById("counter").innerHTML=counter;
+    }
+    let counter1=0;
+    
+    function addone1(){
+      counter1++
+      document.getElementById("counter1").innerHTML=counter1;
+    }
+    let counter0=0;
+    
+    function addone0(){
+      counter0++
+      document.getElementById("counter0").innerHTML=counter0;
+    }
+    </script>
+    <style>
+           @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+        body{
+            background-image: url(https://image.winudf.com/v2/image/Y29tLndpa2tsby5zdGV2ZW5fc2NyZWVuXzRfMTUxODYzNzU0M18wNzM/screen-4.jpg?fakeurl=1&type=.jpg);
+    background-repeat: none;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Droid Arabic Kufi', serif;
+        }
+        .topnav {
+  background-color:#584d9b;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Droid Arabic Kufi', serif;
+  margin: auto;
+}
+
+
+.topnav a:hover {
+  background-color:#322850	;
+}
+
+
+.topnav a.active {
+  background-color:#bfadca ;
+  font-family: 'Droid Arabic Kufi', serif;
+  color: white;
+}
+.title{
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.art{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.des{
+    color: white;
+    text-shadow: black 1px 1px;
+    text-align: center;
+    font-size: 20px;
+}
+.artist{
+    color: white;
+    text-shadow: black 2px 2px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+}
+.artdes{
+    /* color: black;
+    text-shadow: white 1px 1px; */
+    color: white;
+    text-shadow: black 1px 1px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.counter{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.counter1{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.counter0{
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+.artdess{
+    color: white;
+    text-shadow: black 1px 1px;
+    
+    font-size: 20px;
+    text-align: left;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.ig{
+    display: flex;
+    justify-content: center;
+}
+
+/* form */
+
+input,
+span,
+label,
+textarea {
+  font-family:'Droid Arabic Kufi', serif; 
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 13px;
+  color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; 
+}
+
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  /* color: #8F8F8F; */
+  color: white;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+  background: #bfadca;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #a0696b;
+  color: black;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+.foorm{
+    display: flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <div style="font-family:'Droid Arabic Naskh', serif;" >
+        <a class="active" href="mainpage.html">الرئيسية</a>
+        <a href="episodes.html"> الحلقات</a>
+        <a href="music.html">موسيقى</a>
+        <a href="movie.html">الفيلم</a>
+        <a href="museum.html">متحف</a>
+        <a href="tests.html">إختبارات</a>
+        <a href="shop.html">المتجر</a>
+        <a href="books.html">كتب</a>
+        <a href="other.html">تواصل</a>
+        </div>
+      </div>
+      <!-- logo -->
+    <img src="C:\Users\Acer\Pictures\logo6.png"height="101"width="405">
+
+    <h1 class="title">
+        متحف يونيفرس
+    </h1>
+    <p class="des">
+        في هذا المتحف سوف ترى الكثير من القطع الجميله المرسومه من قبل المعجبين الفنانين العرب لستيفن يونيفرس وهذه الصفحه تقديراً لهم ولرسوماتهم الابداعيه , توجد معلومات كل فنان تحت رسوماته 
+        <br>
+        لا تنسى ان تضع زر الاعجاب على الرسومات التي تعجبك 
+    </p>
+    <div class="art">
+    <img src="C:\Users\Acer\Downloads\IMG-2987.jpg"height="414"width="408">
+    </div>
+    <div class="art">
+    <img src="C:\Users\Acer\Downloads\IMG-2989.jpg"height="369"width="414">
+    </div>
+    <h2 class="artist">
+        @shahd_art123 
+    </h2>
+    <p class="artdes">
+        الفنانه شهد تنشر رسوماتها عبر الانستاقرام وترسم اشياء مثل شخصيات ستيفن يونيفرس او انيميشن لستيفن يوينيفرس كما انها ترسم طاقم العمل ومؤدي اصوات الشخصيات 
+        <br>
+        شهد تبلغ من العمر سبعه عشره عاماً , من خريجي دفعه 2021 ان شاءالله, بدأت تنشر محتواها بالانستاقرام في تاريخ الرابع والعشرين من ابريل 2016
+        ومن ذلك الوقت جمعت حوالي 1205 متابع ونشرت ثلاث وخمسون منشور
+    </p>
+    <a class="ig" href="https://www.instagram.com/shahd_art123/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" height="150" width="150">
+    </a>
+    <h1 class="artdess"> :  شخص اعجبوا بالفنان </h1>
+<h1 class="counter0" id="counter0">
+          0 
+</h1>
+<button class="button0" onclick="addone0()">
+    اضغط اذا اعجبت بالفنان
+</button>
+    <div class="art">
+    <img src="C:\Users\Acer\Downloads\IMG-2991.jpg"height="414"width="408">
+    </div>
+    <div class="art">
+        <img src="C:\Users\Acer\Downloads\IMG-2990.jpg"height="414"width="408">
+    </div>
+    <div class="art">
+        <img src="C:\Users\Acer\Downloads\IMG-2992.jpg"height="414"width="408">
+    </div>
+
+   
+
+    <h2 class="artist">
+        @rora_the_cutie
+    </h2>
+    <p class="artdes">
+        اوراد من احد الفنانين الرائعين قلباً وقالباً تشتهر برسمها لشخصيات ستيفن يونيفرس , شخصيات الانمي مثل انمي اكاديميه بطلي و قاتل الشيطان . كما ان لديها شخصيات اصليه مثل الشخصيه لوسي وشخصيه اوريو وشخصيه رورا. 
+        <br>
+        بعد مقابله شخصيه مع الفنانه اوراد شخصياً , هكذا عرفت عن نفسها :
+        <br>
+        "مرحباً جميعاً انا اسمي اوراد همم يمكنكم تسميتي رورا :) عمري ١٤ سنة و هوايتي الرسم...انا ارسم منذ ان كنت طفلة صغيره و مع الايام تطور رسمي تدريجياً و ما زلت اسعى للافضل ، احب برنامج ستيفن يونيفرس و اكثر شخصيه استمتع برسمها هي بينك دايموند  تصميمها يجلب السعاده بنظري:) اكثر شخصيه احبها هي بيريدوت ؛) اتمنى ان تعجبكم رسماتي  "
+    </p>
+    <!-- <div class="all"> -->
+       
+        <h1 class="artdess">  : شخص اعجبوا بالفنان </h1>
+        <h1 class="counter" id="counter">
+                  0 
+        </h1>
+        <button class="button" onclick="addone()">
+            اضغط اذا اعجبت بالفنان
+        </button>
+        <a class="ig" href="https://www.instagram.com/rora_the_cutie/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" height="150" width="150">
+        </a>
+        <div class="art">
+       <img src="C:\Users\Acer\Downloads\IMG-2993.jpg"height="586"width="398">
+       </div>
+       <div class="art">
+           <img src="C:\Users\Acer\Downloads\IMG-2994.jpg"height="275"width="412">
+       </div>
+       <div class="video">
+        <video width="550" height="470" controls>
+          <source src="C:\Users\Acer\Downloads\e4eb59355c4344a4b46a563ecb5c61ea.MOV">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+</div>
+<h2 class="artist">
+    @aerco_art
+</h2>
+<p class="artdes">
+    باسل فنان من المملكه العربيه السعوديه ينشر رسوماته عبر تويتر واحياناً في ستوري الانستاقرام. 
+    <br>
+يرسم العديد من اللقطات بستيفن يونيفرس كما انه يرسم المشاهير والشخصيات الاخرى رسماً رقمياً او رسم بالورق , اياً كانت الطريقه لكن بالنهايه تكون الرسمه ابداعيه مثل عادته
+</p>
+<h1 class="artdess"> :  شخص اعجبوا بالفنان </h1>
+<h1 class="counter1" id="counter1">
+          0 
+</h1>
+<button class="button1" onclick="addone1()">
+    اضغط اذا اعجبت بالفنان
+</button>
+<a class="ig" href="https://twitter.com/aerco_art?lang=ar" target="_blank">
+    <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" height="150" width="150">
+</a>
+<h1 class="title">
+    هل انت فنان؟ تريد ان نضع عملك في هذه الصفحه؟
+    <br>
+    تفضل في تعبأه هذه الاسئله , حظاً موفقاً! 
+</h1>
+<div class="foorm">
+    <form>
+      <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+      <label for="nme"><span>ما هو اسمك؟</span></label>
+      <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+      <label for="msg"><span> ماهو الفن الخاص بك</span></label>
+      <input type="submit" value="Submit!" />
+    </form>
+    </div>
+    <h2 class="artdes">
+             
+        <br>  
+               
+        <br>
+               
+        <br> 
+            <br>
+               
+            <br>
+                 
+            <br>
+                
+            <br>
+        جزيل الشكر والتقدير لجميع الفنانين المذكورين في هذه الصفحه
+        <br>
+        اذهب الى صفحه تواصل للمزيد من المعلومات
+        <br>
+              
+        <br>
+           
+        <br>
+            
+        <br>
+                   
+        <br>
+
+             <br>
+                
+             <br>
+    </h2>
+</body>
+</html>
