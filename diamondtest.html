@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>which diamond are you ?</title>
+    <script>
+
+        let counterone=0;
+       
+       function addoneone(){
+         counterone++
+         document.getElementById("counterone").innerHTML=counterone;
+       }
+
+       let countertwo=0;
+       
+       function addonetwo(){
+         countertwo++
+         document.getElementById("countertwo").innerHTML=countertwo;
+       }
+
+       let counterthree=0;
+       
+       function addonethree(){
+         counterthree++
+         document.getElementById("counterthree").innerHTML=counterthree;
+       }
+
+       let counterfour=0;
+       
+       function addonefour(){
+         counterfour++
+         document.getElementById("counterfour").innerHTML=counterfour;
+       }
+      </script>
+    <style>
+       
+
+        @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body{
+    background-image: url(https://i.imgur.com/6QVXJIS.png);
+    background-repeat: none;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Droid Arabic Kufi', serif;
+}
+.title{
+    font-family: 'Droid Arabic Kufi', serif;
+text-align: right;
+color:white ;
+text-shadow: black 2px 2px;
+font-size: 40px;
+}
+.counter{
+    font-family: 'Droid Arabic Kufi', serif;
+text-align: center;
+color:white ;
+
+font-size: 40px;
+}
+.des{
+    font-family: 'Droid Arabic Kufi', serif;
+    text-align: right;
+    font-size: 20px;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+/* navbar */
+.topnav {
+background-color:#0c1c36;
+overflow: hidden;
+}
+
+
+.topnav a {
+float: left;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+font-family: 'Droid Arabic Kufi', serif;
+margin: auto;
+}
+
+
+.topnav a:hover {
+background-color:#6da0d4	;
+}
+
+
+.topnav a.active {
+background-color:#bfadca ;
+font-family: 'Droid Arabic Kufi', serif;
+color: white;
+}
+.title{
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 30px;
+    
+}
+.q{
+    text-align: right;
+    color: white;
+    text-shadow: black 1px 1px;
+}
+.button{ 
+background-color: #6da0d4; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 570px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-family: 'Droid Arabic Kufi', serif;
+  border-radius: 12px;
+  box-shadow: #000 3px 3px 3px;
+  }
+  .button:hover{
+      background-color:gray;
+  }
+  .center{
+      display: flex;
+      justify-content: center;
+  }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <div style="font-family:'Droid Arabic Naskh', serif;" >
+        <a class="active" href="mainpage.html">الرئيسية</a>
+        <a href="episodes.html"> الحلقات</a>
+        <a href="music.html">موسيقى</a>
+        <a href="movie.html">الفيلم</a>
+        <a href="museum.html">متحف</a>
+        <a href="tests.html">إختبارات</a>
+        <a href="shop.html">المتجر</a>
+        <a href="books.html">كتب</a>
+        <a href="other.html">تواصل</a>
+        </div>
+      </div>
+      <!-- logo -->
+    <img src="C:\Users\Acer\Pictures\logo6.png"height="101"width="405">
+    <p class="title">
+        من بين الدايمونز الاربعه وايت و يلو و بلو و بينك 
+        <br>
+        اي دايموند تشبهك اكثر ؟
+    </p>
+    <h2 class="q">
+        ما الذي تستمتع بفعله اكثر ؟
+    </h2>
+    <button onclick="addoneone()" class="button">
+الجلوس لوحدي لانهاء العمل
+    </button> 
+    <button onclick="addonetwo()"  class="button">
+زياره المتاحف التاريخيه
+     </button> 
+ <button onclick="addonethree()" class="button">
+ مشاهده برنامجي المفضل والبكاء
+     </button> 
+ <button onclick="addonefour()" class="button">
+    البدء بمشروع ضخم عفوياً واشغل نفسي به
+    </button>     
+
+    <h2 class="q">
+       ما هي الالقاب الساخره التي ينادوها الناس لك ؟
+    </h2>
+    <button onclick="addoneone()" class="button">
+لا احد يجرؤ ان يسخر بي
+    </button> 
+    <button onclick="addonetwo()"  class="button">
+مغفله
+     </button> 
+ <button onclick="addonethree()" class="button">
+ طفل باكي
+     </button> 
+ <button onclick="addonefour()" class="button">
+    مهرج
+    </button>  
+    
+    <h2 class="q">
+       كيف ترى بيئه عملك ؟
+     </h2>
+     <button onclick="addoneone()" class="button">
+ مكان منظم جداً لا يسمح للتلاعب
+     </button> 
+     <button onclick="addonetwo()"  class="button">
+ مكان يتيح فرصه للتعاون والعمل
+      </button> 
+  <button onclick="addonethree()" class="button">
+  مكان مثالي لنسيان الهموم والحزن
+      </button> 
+  <button onclick="addonefour()" class="button">
+     مكان مثالي لصنع الاصدقاء وعدم انجاز اي عمل
+     </button>  
+
+     <h2 class="q">
+         ما هي اكلتك المفضله ؟
+     </h2>
+     <button onclick="addoneone()" class="button">
+        سلطه
+     </button> 
+     <button onclick="addonetwo()"  class="button">
+ شطيره من سابواي
+      </button> 
+  <button onclick="addonethree()" class="button">
+  الرامن
+      </button> 
+  <button onclick="addonefour()" class="button">
+     بيتزا
+     </button>  
+    <h1 class="title">
+        :
+        النتائج
+    </h1>         
+    
+    <h3 class="title">
+        :
+        اخترت الجواب واحد بهذه المرات
+    </h3>
+    <h3 class="counter" id="counterone">
+        0
+    </h3>
+    <h2 class="q">
+        ! 
+        اذا كان 1 اكثر جواب اخترته , انت وايت دايموند
+    </h2>
+    <div class="center">
+    <a target="_blank" href="https://steven-universe.fandom.com/wiki/White_Diamond">
+    <img src="https://media.sketchfab.com/models/c75fed0294484e32945ed20048cfda3a/thumbnails/37e24f2db0e6420c93aadae0e66229e2/ee12604eb2ea412daffb1ab5538af026.jpeg"height="216"width="384">
+    </a>
+    </div>
+    <p class="title">
+        اذا كنت وايت دايموند هذا يعني انك شخص منظم جداً لا يحب المزاح وجيد جداً في ادائه للعمل
+        </p>
+    <h3 class="title">
+        :
+        اخترت الجواب اثنان بهذه المرات
+    </h3>
+    <h3 class="counter" id="countertwo">
+        0
+    </h3>
+    <h2 class="q">
+        ! 
+        اذا كان 2 اكثر جواب اخترته , انت يلو دايموند
+    </h2>
+    <div class="center">
+        <a target="_blank" href="https://steven-universe.fandom.com/wiki/Yellow_Diamond">
+            <img src="https://pm1.narvii.com/6889/2b0ac7300961ecf086702a0d642581f98ab263efr1-1280-720v2_hq.jpg"height="288"width="512">
+        </a>
+    </div>
+        <p class="title">
+            اذا انت يلو دايموند هذا يعني انك شخص حازم وصلب ومنظم لكنك حساس من الداخل وتهتم جداً لاصدقائك وعائلتك
+        </p>
+    </div>
+    <h3 class="title">
+        :
+        اخترت الجواب ثلاثه بهذه المرات
+    </h3>
+    <h3 class="counter" id="counterthree">
+        0
+    </h3>
+    <h2 class="q">
+        ! 
+        اذا كان 3 اكثر جواب اخترته , انت بلو دايموند
+    </h2>
+    <div class="center">
+        <a target="_blank" href="https://steven-universe.fandom.com/wiki/Blue_Diamond">
+            <img src="https://static.comicvine.com/uploads/original/11129/111290338/6514493-4405762664-3c3.p.png">
+        </a>
+        </div>
+        <p class="title">
+            اذا انت بلو دايموند هذا يعني انك شخص حساس جداً ويخاف ان يخسر اصدقائه ومن هم قريبين منه
+        </p>
+    <h3 class="title">
+        :
+        اخترت الجواب اربعه بهذه المرات
+    </h3>
+    <h3 class="counter" id="counterfour">
+        0
+    </h3>
+    <h2 class="q">
+        ! 
+        اذا كان 4 اكثر جواب اخترته , انت بينك دايموند
+    </h2>
+    <div class="center">
+        <a target="_blank" href="https://steven-universe.fandom.com/wiki/Pink_Diamond">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Pink_Diamond.png">
+        </a>
+        </div>
+        <p class="title">
+            اذا انت بينك دايموند هذا يعني انك شخص مرح حقاً والاغلب يرونك كشخص طفولي لكنك في الحقيقه جيد في تحمل المسؤوليه ولا تخاف ان تدافع عن الحق
+        </p>
+</body>
+</html>
+
+<!-- <div class="center">
+        <a target="_blank" href="">
+            <img src="">
+        </a> -->

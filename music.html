@@ -254,13 +254,25 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
   font-size: 60px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.button{
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
+.button{ 
+background-color: #bfadca; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 570px;
+  margin-top: 3px;
+  margin-bottom: 5px;
   font-family: 'Droid Arabic Kufi', serif;
-}
+  border-radius: 12px;
+  box-shadow: #000 3px 3px 3px;
+  }
+  .button:hover{
+      background-color:gray;
+  }
     </style>
 </head>
 <body>
@@ -410,33 +422,33 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
     <h1 class="counter" id="counter">
       0
     </h1>
-    <div class="button">
-    <button onclick="addone()">
+    <div>
+    <button class="button" onclick="addone()">
     امرأه عملاقه
     </button>
     </div>
-    <div class="button">
-    <button onclick="addone()">
+    <div>
+    <button class="button" onclick="addone()">
       كن كما انت
       </button>
       </div>
-      <div class="button">
-      <button onclick="addone()">
+      <div">
+      <button class="button" onclick="addone()">
       افعلها من اجلها
       </button>
       </div>
-      <div class="button">
-        <button onclick="addone()">
+      <div>
+        <button class="button" onclick="addone()">
            ليوم واحد دعونا نفكر بالحب
          </button>
          </div>
-         <div class="button">
-         <button onclick="addone()">
+         <div>
+         <button class="button" onclick="addone()">
           انتماء
         </button>
         </div>
-        <div class="button">
-          <button onclick="addone()">
+        <div>
+          <button class="button" onclick="addone()">
             اسبابي الصغيره لماذا
           </button>
           </div>

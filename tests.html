@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SU Arab tests</title>
+    <style>
+         @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+        body{
+            background-image: url(https://wallpaperscute.com/wp-content/uploads/2020/01/Steven-Universe-The-Movie-Wallpaper-For-Desktop.jpg);
+    background-repeat: none;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Droid Arabic Kufi', serif;
+        }
+        
+        
+  /* navbar */
+  .topnav {
+  background-color:#668cdf;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Droid Arabic Kufi', serif;
+  margin: auto;
+}
+
+
+.topnav a:hover {
+  background-color:#6a64b5	;
+}
+
+
+.topnav a.active {
+  background-color:#ad99f5;
+  font-family: 'Droid Arabic Kufi', serif;
+  color: white;
+}
+.title{
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    
+}
+.des{
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 20px;
+}
+
+/* buttons */
+
+:root {
+  --backgroundColor: rgba(246, 241, 209);
+  --colorShadeA: rgb(106, 163, 137);
+  --colorShadeB: rgb(121, 186, 156);
+  --colorShadeC: rgb(150, 232, 195);
+  --colorShadeD: rgb(187, 232, 211);
+  --colorShadeE: rgb(205, 255, 232);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+button.big-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+    color:var(--colorShadeA);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+button.big-button {
+   padding: 1em 2em;
+   border: 2px solid var(--colorShadeA);
+  border-radius: 1em;
+  background: var(--colorShadeE);
+transform-style: preserve-3d;
+   transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorShadeC);
+  border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+ transform: translate3d(0, 0.75em, -1em);
+     transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+button.big-button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+button.big-button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+button.big-button:active {
+            transform: translate(0em, 0.75em);
+}
+
+button.big-button:active::before {
+  transform: translate3d(0, 0, -1em);
+  
+      box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+input,
+span,
+label,
+textarea {
+  font-family:'Droid Arabic Kufi', serif; 
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 13px;
+  color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; 
+}
+
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  /* color: #333; */
+  color: white;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  /* color: #8F8F8F; */
+  color: white;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+  background: #bfadca;
+  color: black;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #a0696b;
+  color: black;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+.foorm{
+    display: flex;
+    justify-content: center;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <div style="font-family:'Droid Arabic Naskh', serif;" >
+        <a class="active" href="mainpage.html">الرئيسية</a>
+        <a href="episodes.html"> الحلقات</a>
+        <a href="music.html">موسيقى</a>
+        <a href="movie.html">الفيلم</a>
+        <a href="museum.html">متحف</a>
+        <a href="tests.html">إختبارات</a>
+        <a href="shop.html">المتجر</a>
+        <a href="other.html">تواصل</a>
+        </div>
+      </div>
+      <!-- logo -->
+    <img src="C:\Users\Acer\Pictures\logo5.png"height="101"width="405">
+
+    <h1 class="title">
+        اختبارات يونيفرس
+    </h1>
+<p class="des">
+    تظن انك تعرف الكثير عن ستيفن يونيفرس ؟ جرب اختبار المعرفه وقيس معرفتك بالبرنامج! 
+    <br>
+    تسائلت يوماً من ستكون لو اصحبت احد الكريستال جيمز ؟ اختبر وشاركنا بنتيجتك! 
+</p>
+<h1>
+   
+    <br>
+   
+</h1>
+<h2 class="title">
+    اختبار اي دايموند انت ؟
+</h2>
+<p class="des">
+    من بين الدايمونز الاربعه وايت و يلو و بلو و بينك . ... اي دايموند تشبهك اكثر ؟
+</p>
+<div class="center">
+<a href="diamondtest.html">
+    <button class="big-button">اخذ الاختبار</button>
+    </a>
+    </div>
+    <h1>
+         <br>
+    </h1>
+<h2 class="title">
+    اختبار مدى معرفتك بستيفن يونيفرس ؟
+</h2>
+<p class="des">
+    !
+    هل تعتبر نفسك معجب كبير لستيفن يونيفرس ؟ اختبر معلوماتك هنا
+</p>
+<div class="center">
+    <a href="diamondtest.html">
+        <button class="big-button">اخذ الاختبار</button>
+        </a>
+        </div>
+        <h1>
+              <br> 
+        </h1>
+<h2 class="title">
+    اختبار اغاني ستيفن يونيفرس
+</h2>
+<p class="des">
+    جميعنا نغني اغاني ستيفن يونيفرس طوال الوقت ! اختبر مدى معرفتك بالكلمات
+</p>
+<div class="center">
+    <a href="diamondtest.html">
+        <button class="big-button">اخذ الاختبار</button>
+        </a>
+        </div>
+</body>
+<h1 class="title">
+    نتمنى انكم احببتوا الاختبارات ! شاركونا نتائجكم
+</h1>
+<div class="foorm">
+    <form>
+      <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+      <label for="nme"><span>ما هو اسمك؟</span></label>
+      <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+      <label for="msg"><span>نتيجه اختبارك</span></label>
+      <input type="submit" value="Submit!" />
+    </form>
+    </div>
+</html>
